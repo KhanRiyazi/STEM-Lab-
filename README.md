@@ -17,6 +17,7 @@ stem-exhibition/
 │   ├── art.js              the drawing for each project
 │   └── app.js              filters, pop-up, tracker, share summary, deadline note
 ├── assets/aif-logo.png     American India Foundation logo
+├── assets/students/        your student photos for the staircase
 ├── .github/workflows/pages.yml   auto-deploy to GitHub Pages
 ├── .nojekyll
 ├── .gitignore
@@ -66,6 +67,10 @@ Open `js/data.js` and copy one project block. Change these fields:
 | `photo` (optional) | path to your own photo, such as `assets/solar-oven.jpg`. It replaces the drawing |
 
 If you add a project without a `photo`, add a drawing for its `id` in `js/art.js`, or give it a photo.
+
+## Add student photos to the staircase
+
+Put photos named `classroom`, `school`, `district`, `state`, `national` and `international` (.jpg, .jpeg, .png or .webp) in `assets/students/`. Each one becomes the background of its step in the "One project. Many stages." section. Read `assets/students/README.md` for sizes and student-privacy rules. Get permission from parents and the school first, because the repository is public.
 
 ## Before you publish: check these
 

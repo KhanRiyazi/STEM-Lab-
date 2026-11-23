@@ -70,3 +70,10 @@ section{padding:4rem 0}
 #summary{font-family:'Atkinson Hyperlegible',monospace;white-space:pre-wrap;background:#fff;border:2px solid var(--ink);padding:1rem;min-height:12rem}
 :focus-visible{outline:3px solid var(--cobalt);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Student photos on the staircase. Added by js/app.js only when a photo file exists. */
+.stair.has-photo{
+  background-image:linear-gradient(to top,rgba(20,33,61,.88) 15%,rgba(20,33,61,.35) 100%),var(--photo);
+  background-size:cover;background-position:center;color:#fff;
+}
+.stair.has-photo h3,.stair.has-photo p{text-shadow:0 1px 3px rgba(0,0,0,.6)}
