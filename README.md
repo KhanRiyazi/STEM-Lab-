@@ -15,6 +15,7 @@ stem-exhibition/
 ├── js/
 │   ├── data.js             the project list (edit this to add projects)
 │   ├── art.js              the drawing for each project
+│   ├── photos.js           loads student photos onto the staircase
 │   └── app.js              filters, pop-up, tracker, share summary, deadline note
 ├── assets/aif-logo.png     American India Foundation logo
 ├── assets/students/        your student photos for the staircase

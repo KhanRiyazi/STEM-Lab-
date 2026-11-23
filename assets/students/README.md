@@ -20,3 +20,7 @@ A step with no photo keeps its plain colour, so you can add photos one at a time
 - Prefer photos of hands, projects and group work from behind, not close-up faces.
 - Do not add names, ID cards or other personal details in the photo or the file name.
 - Remove location data from the photo (EXIF) before uploading.
+
+## Photos currently in this folder
+
+`classroom`, `school`, `district`, `state` and `national` are added. `international` has no photo yet, so that step stays yellow. Photos were resized and their hidden location data (EXIF) was removed.

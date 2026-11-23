@@ -46,8 +46,8 @@ section{padding:4rem 0}
 .stair{border:2px solid var(--ink);padding:.8rem;display:flex;flex-direction:column;gap:.4rem}
 .stair h3{font-size:1.05rem;margin:0}
 .stair p{font-size:.88rem;margin:0}
-.s1{min-height:150px;background:#dbe5ff}.s2{min-height:190px;background:#b9ccff}.s3{min-height:230px;background:#9bb2ff}
-.s4{min-height:270px;background:#7d9aff}.s5{min-height:310px;background:var(--cobalt);color:#fff}.s6{min-height:350px;background:var(--signal)}
+.s1{min-height:220px;background:#dbe5ff}.s2{min-height:260px;background:#b9ccff}.s3{min-height:300px;background:#9bb2ff}
+.s4{min-height:340px;background:#7d9aff}.s5{min-height:380px;background:var(--cobalt);color:#fff}.s6{min-height:420px;background:var(--signal)}
 .chip{display:inline-block;font-size:.78rem;font-weight:700;border:1.5px solid var(--ink);padding:.05rem .4rem;margin:.1rem .1rem 0 0;background:#fff;color:var(--ink)}
 .chip.code{background:var(--signal)}
 @media (max-width:991px){.stairs{grid-template-columns:1fr}.stair{min-height:0!important}}
@@ -73,7 +73,9 @@ section{padding:4rem 0}
 
 /* Student photos on the staircase. Added by js/app.js only when a photo file exists. */
 .stair.has-photo{
-  background-image:linear-gradient(to top,rgba(20,33,61,.88) 15%,rgba(20,33,61,.35) 100%),var(--photo);
-  background-size:cover;background-position:center;color:#fff;
+  background-image:linear-gradient(to bottom,rgba(20,33,61,.92) 0%,rgba(20,33,61,.78) 40%,rgba(20,33,61,.1) 100%),var(--photo);
+  background-size:cover;background-position:center 40%;color:#fff;
 }
 .stair.has-photo h3,.stair.has-photo p{text-shadow:0 1px 3px rgba(0,0,0,.6)}
+
+@media (max-width:991px){.stair.has-photo{min-height:240px!important}}
