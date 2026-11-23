@@ -3,85 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>STEM Projects Exhibition</title>
+<title>STEM Projects Exhibition | Govt. Inter College Nishat Ganj, Lucknow</title>
+<meta name="description" content="Project-based learning exhibition for school students: choose a STEM project, build it, and learn how to join national and international competitions.">
+<meta property="og:title" content="STEM Projects Exhibition">
+<meta property="og:description" content="Build it. Test it. Show it. A PBL guide to national and international STEM and coding competitions.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%94%AC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;800&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<style>
-  :root{
-    --paper:#eef2f7; --ink:#14213d; --cobalt:#2a4bd7; --signal:#ffc93c; --mint:#1f9d78; --white:#fff;
-    --line:#c9d3e3;
-  }
-  body{font-family:'Atkinson Hyperlegible',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
-  h1,h2,h3,h4,.brand{font-family:'Bricolage Grotesque',sans-serif;letter-spacing:-.01em}
-  /* blueprint grid behind the hero */
-  .hero{background:
-      linear-gradient(var(--line) 1px,transparent 1px) 0 0/40px 40px,
-      linear-gradient(90deg,var(--line) 1px,transparent 1px) 0 0/40px 40px,var(--paper);
-    border-bottom:3px solid var(--ink)}
-  .hero h1{font-weight:800;font-size:clamp(2.4rem,7vw,5rem);line-height:1}
-  .hero h1 span{display:block;color:var(--cobalt)}
-  .subnav{background:var(--ink)}
-  .subnav .nav-link{color:#dfe6f5}.subnav .nav-link:hover{color:var(--signal)}
-  .btn-signal{background:var(--signal);color:var(--ink);font-weight:700;border:2px solid var(--ink);border-radius:0;box-shadow:4px 4px 0 var(--ink)}
-  .btn-signal:hover{background:#ffd666;color:var(--ink);transform:translate(-1px,-1px)}
-  .btn-outline-ink{border:2px solid var(--ink);color:var(--ink);border-radius:0;font-weight:700}
-  .btn-outline-ink:hover,.btn-outline-ink.active{background:var(--ink);color:var(--white)}
-  /* placard = the one memorable element */
-  .placard{background:var(--white);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--cobalt);padding:1.5rem}
-  .placard h2{font-size:1.4rem}
-  .placard li{margin-bottom:.4rem}
-  section{padding:4rem 0}
-  .section-title{font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem)}
-  .step{border-left:4px solid var(--cobalt);padding:.25rem 0 .25rem 1rem;height:100%}
-  .step h3{font-size:1.15rem;margin:0}
-  /* exhibit cards */
-  .exhibit{background:var(--white);border:2px solid var(--ink);height:100%;display:flex;flex-direction:column}
-  .exhibit .tag{padding:.35rem .9rem;font-weight:700;font-size:.9rem;border-bottom:2px solid var(--ink)}
-  .tag-Science{background:#cfe9ff}.tag-Technology{background:#e0d4ff}.tag-Engineering{background:#ffe3b3}.tag-Math{background:#c9f0dd}
-  .exhibit .body{padding:1rem;flex:1}
-  .exhibit h3{font-size:1.3rem}
-  .exhibit.picked{outline:4px solid var(--mint);outline-offset:3px}
-  .level{font-size:.9rem;color:#4a5878}
-  .tracker{background:var(--ink);color:#fff}
-  .tracker .form-check-input:checked{background-color:var(--mint);border-color:var(--mint)}
-  .progress{height:1.1rem;border-radius:0;background:#2b3a60}
-  .progress-bar{background:var(--mint);transition:width .3s}
-  .rubric td,.rubric th{background:var(--white);border-color:var(--ink)}
-  .aif-header{position:relative;z-index:1050}
-  .aif-header .dropdown-menu{z-index:1060;border:2px solid var(--ink);border-radius:0}
-  .subnav{z-index:1020}
-  .subnav .nav-link{white-space:nowrap;padding:.5rem .7rem}
-  .stairs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;align-items:end}
-  .stair{border:2px solid var(--ink);padding:.8rem;display:flex;flex-direction:column;gap:.4rem}
-  .stair h3{font-size:1.05rem;margin:0}
-  .stair p{font-size:.88rem;margin:0}
-  .s1{min-height:150px;background:#dbe5ff}.s2{min-height:190px;background:#b9ccff}.s3{min-height:230px;background:#9bb2ff}
-  .s4{min-height:270px;background:#7d9aff}.s5{min-height:310px;background:var(--cobalt);color:#fff}.s6{min-height:350px;background:var(--signal)}
-  .chip{display:inline-block;font-size:.78rem;font-weight:700;border:1.5px solid var(--ink);padding:.05rem .4rem;margin:.1rem .1rem 0 0;background:#fff;color:var(--ink)}
-  .chip.code{background:var(--signal)}
-  @media (max-width:991px){.stairs{grid-template-columns:1fr}.stair{min-height:0!important}}
-  .aif-nav .nav-link{color:var(--ink);font-weight:700}
-  .aif-nav .nav-link:hover{color:var(--cobalt)}
-  .aif-logo{height:52px;width:auto}
-  .school{background:var(--cobalt);color:#fff;padding:1.5rem 0;border-bottom:3px solid var(--ink)}
-  .school .hi{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:clamp(1.4rem,4vw,2.2rem);line-height:1.3;margin:0}
-  .school .en{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(1rem,2.5vw,1.3rem);margin:0}
-  .badge-lab{background:var(--signal);color:var(--ink);font-weight:700;border:2px solid var(--ink);padding:.4rem .8rem;display:inline-block}
-  .pic{border-bottom:2px solid var(--ink);background:#f7f9fc;line-height:0}
-  .pic svg,.pic img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
-  .info dt{font-family:'Noto Sans Devanagari','Atkinson Hyperlegible',sans-serif;font-weight:700}
-  .info dd{margin-bottom:.8rem}
-  .comp{background:var(--white);border:2px solid var(--ink);padding:1.25rem;height:100%;display:flex;flex-direction:column}
-  .comp h3{font-size:1.25rem}
-  .comp ul{padding-left:1.1rem}
-  .comp .btn{margin-top:auto}
-  .facts{font-size:.95rem;color:#3b4a6b}
-  #summary{font-family:'Atkinson Hyperlegible',monospace;white-space:pre-wrap;background:#fff;border:2px solid var(--ink);padding:1rem;min-height:12rem}
-  :focus-visible{outline:3px solid var(--cobalt);outline-offset:2px}
-  @media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -89,7 +20,7 @@
 <header class="bg-white border-bottom border-2 border-dark aif-header">
   <nav class="navbar navbar-expand-lg aif-nav py-2" aria-label="American India Foundation Trust">
     <div class="container">
-      <a class="navbar-brand" href="https://aif-india.org/" target="_blank" rel="noopener"><img class="aif-logo" src="data:image/png;base64,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" alt="American India Foundation Trust"></a>
+      <a class="navbar-brand" href="https://aif-india.org/" target="_blank" rel="noopener"><img class="aif-logo" src="assets/aif-logo.png" alt="American India Foundation Trust"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#aifmenu" aria-controls="aifmenu" aria-expanded="false" aria-label="Open AIF menu"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="aifmenu">
         <ul class="navbar-nav ms-auto align-items-lg-center">
@@ -468,195 +399,8 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// ---- Edit this list to add your own projects ----
-const PROJECTS = [
-  {id:"oven", title:"Solar Oven", field:"Science", level:"Easy · 2 sessions",
-   question:"Can sunlight alone warm food to 60°C?",
-   summary:"Build a box oven from a pizza box and foil. Measure how hot it gets.",
-   materials:["Pizza box","Aluminium foil","Black paper","Plastic wrap","Thermometer","Tape"],
-   steps:["Cut a flap in the box lid and cover the inside with foil.","Line the bottom with black paper.","Seal the opening with plastic wrap.","Place in sunlight and record temperature every 5 minutes for 30 minutes.","Plot time against temperature."],
-   result:"A line graph that rises, then levels off. Many ovens reach 50–70°C on a sunny day."},
-  {id:"filter", title:"Water Filter", field:"Engineering", level:"Medium · 2 sessions",
-   question:"Which layers clean muddy water best?",
-   summary:"Design a filter from a bottle and layers of sand, gravel, and cotton.",
-   materials:["Plastic bottle","Sand","Gravel","Cotton","Muddy water","Clear cups"],
-   steps:["Cut the bottle and turn the top upside down as a funnel.","Add layers: cotton, sand, gravel.","Pour muddy water slowly.","Compare clarity before and after.","Change one layer and test again."],
-   result:"Two cups side by side: before and after. Note: this water is NOT safe to drink."},
-  {id:"bridge", title:"Paper Bridge Challenge", field:"Engineering", level:"Easy · 1 session",
-   question:"Which shape holds the most weight?",
-   summary:"Fold paper into beams and test how many coins each bridge can hold.",
-   materials:["A4 paper","Two books","Coins","Tape","Ruler"],
-   steps:["Place two books 20 cm apart.","Make a flat bridge and add coins until it bends.","Fold the paper into a different shape and repeat.","Record coins held for each design."],
-   result:"A table of designs and coin counts. Folded shapes usually hold more than flat paper."},
-  {id:"expense", title:"Expense Tracker in Python", field:"Technology", level:"Medium · 3 sessions",
-   question:"Where does my pocket money go?",
-   summary:"Collect your own spending data and analyse it with pandas.",
-   materials:["Laptop","Python and pandas","CSV file","Notebook for daily records"],
-   steps:["Record 7 days of spending in a CSV file.","Load it with pd.read_csv().","Use groupby to total each category.","Make a bar chart.","Write 2 sentences about what you found."],
-   result:"A chart and a short report that answer your question using your own data."},
-  {id:"dice", title:"Dice Probability Lab", field:"Math", level:"Easy · 1 session",
-   question:"Is every number on a dice equally likely?",
-   summary:"Roll a dice 60 times, then compare real results with the theory.",
-   materials:["Dice","Tally sheet","Graph paper or spreadsheet"],
-   steps:["Predict how many times each number will appear in 60 rolls.","Roll and tally.","Draw a bar chart.","Compare with your prediction.","Roll 60 more and see if results get closer."],
-   result:"A bar chart that is close to equal, and a note on why more rolls give better results."},
-  {id:"plant", title:"Plant Growth Experiment", field:"Science", level:"Easy · 2 weeks",
-   question:"Does light change how fast a seed grows?",
-   summary:"Grow seeds in two places and measure them every day.",
-   materials:["Bean seeds","Two cups","Soil","Water","Ruler"],
-   steps:["Plant the same number of seeds in both cups.","Keep one in sunlight and one in a dark cupboard.","Water both equally.","Measure height daily and record it.","Plot both lines on one graph."],
-   result:"Two lines on one graph. Keep everything the same except light."},
-  {id:"quiz", title:"Python Quiz Game", field:"Technology", level:"Medium · 2 sessions",
-   question:"Can I code a game that quizzes my friends on science?",
-   summary:"Write a small Python game with questions, a score, and a final message.",
-   materials:["Laptop","Python (IDLE or Thonny)","5 science questions with answers"],
-   steps:["Store 5 questions and answers in a Python list.","Use a for loop to ask each question with input().","Use if and else to check each answer.","Count the score and print a message at the end.","Add a second level or a timer."],
-   result:"A working game that prints a final score. Run it live at the exhibition."}
-];
-
-// Each project has a drawing. To use a real photo, add  photo:"images/solar-oven.jpg"  to the project.
-const S = (inner,bg) => `<svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="320" height="180" fill="${bg}"/>${inner}</svg>`;
-const ART = {
-  oven: () => S(`<circle cx="262" cy="42" r="22" fill="#ffc93c" stroke="#14213d" stroke-width="3"/><g stroke="#ffc93c" stroke-width="4"><path d="M262 8v10M262 66v10M228 42h10M286 42h10M238 18l7 7M279 59l7 7M286 18l-7 7M245 59l-7 7"/></g><path d="M262 66L170 112" stroke="#ffc93c" stroke-width="3" stroke-dasharray="6 5"/><polygon points="60,150 260,150 240,120 80,120" fill="#14213d"/><polygon points="80,120 240,120 200,80 120,100" fill="#d9dee8" stroke="#14213d" stroke-width="3"/><rect x="95" y="124" width="130" height="18" fill="#222" opacity=".5"/><rect x="40" y="150" width="240" height="10" fill="#8aa0c8"/>`,"#cfe9ff"),
-  filter: () => S(`<polygon points="110,30 210,30 190,60 130,60" fill="#fff" stroke="#14213d" stroke-width="3"/><rect x="130" y="60" width="60" height="22" fill="#e7e3d8" stroke="#14213d" stroke-width="2"/><rect x="130" y="82" width="60" height="24" fill="#e8c77d" stroke="#14213d" stroke-width="2"/><rect x="130" y="106" width="60" height="22" fill="#9a9a9a" stroke="#14213d" stroke-width="2"/><path d="M115 36h90l-18 22h-54z" fill="#8a6b4a" opacity=".8"/><path d="M160 128v12" stroke="#4aa3ff" stroke-width="5" stroke-linecap="round"/><path d="M110 140h100v30H110z" fill="#e8f6ff" stroke="#14213d" stroke-width="3"/><rect x="113" y="156" width="94" height="11" fill="#4aa3ff"/><path d="M40 140h50v30H40z" fill="#f3e8d6" stroke="#14213d" stroke-width="3"/><rect x="43" y="150" width="44" height="17" fill="#8a6b4a"/><path d="M230 140h50v30h-50z" fill="#e8f6ff" stroke="#14213d" stroke-width="3"/><rect x="233" y="150" width="44" height="17" fill="#4aa3ff"/>`,"#eaf1fb"),
-  bridge: () => S(`<rect x="30" y="100" width="70" height="70" fill="#2a4bd7" stroke="#14213d" stroke-width="3"/><rect x="220" y="100" width="70" height="70" fill="#1f9d78" stroke="#14213d" stroke-width="3"/><path d="M100 100q60-24 120 0" fill="none" stroke="#14213d" stroke-width="10" stroke-linecap="round"/><path d="M100 100q60-24 120 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><g fill="#ffc93c" stroke="#14213d" stroke-width="2"><ellipse cx="140" cy="84" rx="12" ry="5"/><ellipse cx="160" cy="80" rx="12" ry="5"/><ellipse cx="180" cy="84" rx="12" ry="5"/><ellipse cx="160" cy="72" rx="12" ry="5"/></g>`,"#ffe9c2"),
-  expense: () => S(`<rect x="70" y="30" width="180" height="104" rx="6" fill="#14213d"/><rect x="80" y="40" width="160" height="84" fill="#fff"/><rect x="100" y="86" width="22" height="30" fill="#2a4bd7"/><rect x="132" y="62" width="22" height="54" fill="#ffc93c"/><rect x="164" y="76" width="22" height="40" fill="#1f9d78"/><rect x="196" y="98" width="22" height="18" fill="#2a4bd7"/><path d="M90 116h140" stroke="#14213d" stroke-width="2"/><path d="M50 134h220l-14 16H64z" fill="#8aa0c8" stroke="#14213d" stroke-width="3"/><text x="160" y="160" text-anchor="middle" font-family="monospace" font-size="12" fill="#14213d">df.groupby()</text>`,"#e2d9ff"),
-  dice: () => {const d=(x,y,r,dots)=>`<g transform="rotate(${r} ${x+30} ${y+30})"><rect x="${x}" y="${y}" width="60" height="60" rx="10" fill="#fff" stroke="#14213d" stroke-width="3"/>${dots.map(([a,b])=>`<circle cx="${x+a}" cy="${y+b}" r="5" fill="#14213d"/>`).join("")}</g>`;
-    return S(d(40,60,-10,[[30,30]])+d(130,40,8,[[16,16],[44,44]])+d(220,70,-6,[[16,16],[44,16],[30,30],[16,44],[44,44]]),"#cdeede")},
-  quiz: () => S(`<rect x="70" y="26" width="180" height="108" rx="6" fill="#14213d"/><rect x="80" y="36" width="160" height="88" fill="#0f1830"/><g font-family="monospace" font-size="11"><text x="90" y="56" fill="#ffc93c">score = 0</text><text x="90" y="72" fill="#7d9aff">for q in questions:</text><text x="100" y="88" fill="#fff">ans = input(q)</text><text x="100" y="104" fill="#33c58f">if ans == key: score += 1</text></g><path d="M50 134h220l-14 16H64z" fill="#8aa0c8" stroke="#14213d" stroke-width="3"/><circle cx="268" cy="40" r="20" fill="#ffc93c" stroke="#14213d" stroke-width="3"/><text x="268" y="48" text-anchor="middle" font-size="24" font-weight="800" fill="#14213d">?</text>`,"#e2d9ff"),
-  plant: () => S(`<circle cx="46" cy="36" r="16" fill="#ffc93c" stroke="#14213d" stroke-width="3"/><path d="M274 22a16 16 0 1 0 12 26a13 13 0 0 1-12-26z" fill="#14213d"/><rect x="190" y="10" width="120" height="150" fill="#14213d" opacity=".12"/><path d="M60 120h70l-8 40H68z" fill="#c9733a" stroke="#14213d" stroke-width="3"/><path d="M95 120V70" stroke="#1f9d78" stroke-width="5"/><path d="M95 90c-24-2-30-20-30-20s26-4 30 20zM95 76c24-2 30-20 30-20s-26-4-30 20z" fill="#33c58f" stroke="#14213d" stroke-width="2"/><path d="M200 120h70l-8 40h-54z" fill="#c9733a" stroke="#14213d" stroke-width="3"/><path d="M235 120v-26" stroke="#1f9d78" stroke-width="5"/><path d="M235 100c-10 0-14-8-14-8s12-2 14 8z" fill="#33c58f" stroke="#14213d" stroke-width="2"/>`,"#d8f1ff")
-};
-const art = p => p.photo ? `<img src="${p.photo}" alt="${p.title}" loading="lazy">` : ART[p.id]();
-
-const FIELDS = ["All","Science","Technology","Engineering","Math"];
-const KEY = "stemExhibition";
-const state = JSON.parse(localStorage.getItem(KEY) || "null") || {picked:null, done:{}};
-const save = () => localStorage.setItem(KEY, JSON.stringify(state));
-
-const grid = document.getElementById("grid");
-const filters = document.getElementById("filters");
-let current = null;
-const modal = new bootstrap.Modal(document.getElementById("projectModal"));
-
-function renderFilters(active="All"){
-  filters.innerHTML = FIELDS.map(f =>
-    `<button class="btn btn-outline-ink ${f===active?"active":""}" data-f="${f}" aria-pressed="${f===active}">${f}</button>`).join("");
-}
-function renderGrid(f="All"){
-  grid.innerHTML = PROJECTS.filter(p => f==="All" || p.field===f).map(p => `
-    <div class="col-md-6 col-lg-4">
-      <article class="exhibit ${state.picked===p.id?"picked":""}">
-        <div class="tag tag-${p.field}">${p.field}</div>
-        <div class="pic">${art(p)}</div>
-        <div class="body">
-          <h3>${p.title}</h3>
-          <p class="level mb-2">${p.level}</p>
-          <p>${p.summary}</p>
-        </div>
-        <div class="p-3 pt-0"><button class="btn btn-outline-ink w-100" data-view="${p.id}">View project</button></div>
-      </article>
-    </div>`).join("");
-}
-function renderTracker(){
-  const p = PROJECTS.find(x => x.id===state.picked);
-  document.getElementById("emptyTracker").classList.toggle("d-none", !!p);
-  document.getElementById("trackerBox").classList.toggle("d-none", !p);
-  if(!p) return;
-  document.getElementById("myTitle").textContent = p.title + " — " + p.question;
-  const items = ["Write my question in my notebook", "List my materials", ...p.steps, "Practise my 3-minute talk"];
-  const done = state.done[p.id] || [];
-  document.getElementById("checklist").innerHTML = items.map((t,i) => `
-    <div class="form-check mb-2">
-      <input class="form-check-input" type="checkbox" id="c${i}" data-i="${i}" ${done.includes(i)?"checked":""}>
-      <label class="form-check-label" for="c${i}">${t}</label>
-    </div>`).join("");
-  const pct = Math.round(done.length / items.length * 100);
-  document.getElementById("bar").style.width = pct + "%";
-  document.querySelector(".progress").setAttribute("aria-valuenow", pct);
-  document.getElementById("pct").textContent = pct + "% done (" + done.length + " of " + items.length + " tasks)";
-}
-function openProject(id){
-  current = PROJECTS.find(p => p.id===id);
-  document.getElementById("pmTitle").textContent = current.title;
-  document.getElementById("pmBody").innerHTML = `
-    <div class="pic mb-3 border border-2 border-dark">${art(current)}</div>
-    <p class="fs-5"><strong>Question:</strong> ${current.question}</p>
-    <h4 class="fs-6">Materials</h4><ul>${current.materials.map(m=>`<li>${m}</li>`).join("")}</ul>
-    <h4 class="fs-6">Steps</h4><ol>${current.steps.map(s=>`<li>${s}</li>`).join("")}</ol>
-    <h4 class="fs-6">A good result looks like</h4><p>${current.result}</p>`;
-  modal.show();
-}
-
-filters.addEventListener("click", e => {
-  const f = e.target.dataset.f; if(!f) return;
-  renderFilters(f); renderGrid(f);
-});
-grid.addEventListener("click", e => {
-  const id = e.target.dataset.view; if(id) openProject(id);
-});
-document.getElementById("pickBtn").addEventListener("click", () => {
-  state.picked = current.id; save(); modal.hide();
-  renderGrid(document.querySelector("#filters .active").dataset.f); renderTracker();
-  document.getElementById("tracker").scrollIntoView({behavior:"smooth"});
-});
-document.getElementById("checklist").addEventListener("change", e => {
-  const i = Number(e.target.dataset.i);
-  const list = state.done[state.picked] || [];
-  state.done[state.picked] = e.target.checked ? [...new Set([...list,i])] : list.filter(x => x!==i);
-  save(); renderTracker();
-});
-document.getElementById("reset").addEventListener("click", () => {
-  state.picked = null; save(); renderGrid(document.querySelector("#filters .active").dataset.f); renderTracker();
-});
-
-renderFilters(); renderGrid(); renderTracker();
-// ---- Share summary ----
-const f = id => document.getElementById(id);
-f("fTitle").innerHTML = PROJECTS.map(p => `<option value="${p.id}">${p.title}</option>`).join("");
-function buildSummary(){
-  const p = PROJECTS.find(x => x.id===f("fTitle").value);
-  const lines = [
-    "STEM PROJECT SUMMARY",
-    "Project: " + p.title + " (" + p.field + ")",
-    "Student/Team: " + (f("fName").value || "—"),
-    "Class: " + (f("fClass").value || "—"),
-    "School: Government Inter College Nishat Ganj, Lucknow",
-    "Mentor: Rizwan Ali, Robotics Lab Incharge and STEM Trainer",
-    "",
-    "Question: " + p.question,
-    "What we found: " + (f("fFound").value || "—"),
-    "How it helps our community: " + (f("fHelp").value || "—")
-  ];
-  const text = lines.join("\n");
-  f("summary").textContent = text;
-  f("waBtn").href = "https://wa.me/?text=" + encodeURIComponent(text);
-  return text;
-}
-["fName","fClass","fTitle","fFound","fHelp"].forEach(id => f(id).addEventListener("input", buildSummary));
-f("copyBtn").addEventListener("click", async () => {
-  const text = buildSummary();
-  try { await navigator.clipboard.writeText(text); f("copyMsg").textContent = "Copied. Now paste it in WhatsApp, email, or a nomination form."; }
-  catch { f("copyMsg").textContent = "Copy did not work. Select the text above and copy it by hand."; }
-});
-f("printBtn").addEventListener("click", () => window.print());
-if(state.picked) f("fTitle").value = state.picked;
-buildSummary();
-
-// ---- Bebras deadline note (reported date, confirm on official site) ----
-(function(){
-  const end = new Date("2026-11-28T23:59:59");
-  const days = Math.ceil((end - new Date()) / 86400000);
-  const el = document.getElementById("bebrasAlert");
-  el.textContent = days > 1 ? "Bebras India: school registration is reported to close on 28 November 2026. That is about " + days + " days left. Ask your Principal today."
-    : days === 1 ? "Bebras India: school registration is reported to close tomorrow, 28 November 2026. Ask your Principal today."
-    : days === 0 ? "Bebras India: school registration is reported to close today, 28 November 2026."
-    : "Bebras India: the reported 2026 registration date (28 November) has passed. Check the official page for any extension, and plan for next year.";
-})();
-document.querySelectorAll("[data-guide]").forEach(a => a.addEventListener("click", () => {
-  const t = document.querySelector('[data-bs-target="#g-' + a.dataset.guide + '"]');
-  if (t) bootstrap.Tab.getOrCreateInstance(t).show();
-}));
-</script>
+<script src="js/data.js"></script>
+<script src="js/art.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
